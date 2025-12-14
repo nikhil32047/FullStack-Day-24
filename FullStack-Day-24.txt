@@ -1,0 +1,47 @@
+Day 24:
+==========
+
+1) NumPy Module
+======================
+NumPy (Numerical Python) is a powerful library for numerical computing in Python.
+It provides the ndarray (N-dimensional array) which is faster and more memory-efficient than Python lists.
+NumPy supports vectorized operations, mathematical functions, and linear algebra.
+
+Example:
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr)
+
+Why NumPy?
+High performance
+Less memory usage
+Easy mathematical operations
+Foundation for Pandas, ML, and Data Science
+
+
+2) shape Attribute
+==========================
+shape returns the dimensions of an array as a tuple (rows, columns).
+
+Example:
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+print(arr.shape)   # (2, 3)
+
+
+3) reshape() Method
+==========================
+reshape() changes the shape of an array without changing its data.
+Total number of elements must remain the same.
+
+Example:
+arr = np.array([1, 2, 3, 4, 5, 6])
+new_arr = arr.reshape(2, 3)
+print(new_arr)
+
+
+Output:
+[[1 2 3]
+ [4 5 6]]
